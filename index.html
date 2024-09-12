@@ -68,6 +68,21 @@
         .right-column {
             width: 64%;
         }
+                .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 10%;
+            height: 100%;
+            background-color: blue;
+            z-index: 1;
+        }
+        
+        .content {
+            margin-left: 10%; /* Adjust this to match the width of the sidebar */
+            padding: 20px;
+        }
+
     </style>
          
 </head>     <!-- close page header: required -->
@@ -75,6 +90,8 @@
 <!-- All contents of the web page MUST be placed between <body> </body> -->
   
 <body style="background-image: url('img/bgIMG.jpg')">   <!-- open html body: required -->
+     <div class="sidebar"></div>
+    <div class="content">
     <br><br>
     <table border="0" width="85%" bordercolor="gold" bgcolor="white">        
         <tbody>
